@@ -1,0 +1,5 @@
+C++: g++ example.cpp -o example
+     ./example
+
+C: gcc example.c -o example
+   ./example
