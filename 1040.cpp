@@ -1,50 +1,42 @@
-#include <iostream>
+#include<iostream>
 
 using namespace std;
 
+///precisa mostrar uma casa decimal
+
 int main(){
-	
-	float n1,n2,n3,n4; //pesos 2, 3,4 e 1
-	float n5; //nota da recuperação
-	float media2; //media após recuperação
-	bool n = 0; 
 
-	//usar o setprecision (2) para limitar a quantidade de casas decimais
-	cin >> n1 >> n2 >> n3 >> n4;
+///leia quatro numeros
+float n1,n2,n3,n4,n_exame;
+float media, nova_media;
 
-	float media = (2*n1 + 3*n2 + 4*n3 + n4)/10.0;
+cin >> n1 >> n2 >> n3 >> n4;
 
-	cout << "Media: " << media << endl;
+media = ((n1*2)+(n2*3)+(n3*4)+n4)/10.0;
 
-	if (media >= 5.0 && media <=6.9){
-		cout << "Aluno em exame." << endl;
-		n = 1;
-	} 
+cout << "Media: " << media << " ";
 
-	else if(media < 5.0){
-		cout << "Aluno reprovado." << endl;
-
-	}
-	else {
-		cout << "Aluno aprovado." << endl;
-	}
-
-
-	//condição de recuperação
-	if(n == true){
-		
-		cin >> n5;
-		media2 = (media+n5)/2.0;
-		cout << "Nota do exame: " << n5 << endl;
-		if (media2 >=5.0){
-			cout << "Aluno aprovado." << endl;
-		}
-		else{
-			cout << "Aluno reprovado." << endl;
-		}
-		cout << "Media final: " << media2 << endl;
-	}
+if(media >= 7.0){
+    cout << "Aluno aprovado." << endl;
+}
+else if(media < 5.0){
+    cout << "Aluno reprovado." << endl;
+}
+else{
+    cout << "Aluno em exame." << endl;
+    cin >> n_exame;
+    nova_media = (media+n_exame)/2.0;
+    cout << "Nota do exame." << n_exame << endl;
+    if(nova_media >=7.0){
+        cout << "Aluno aprovado." << endl;
+        cout << nova_media;
+    }
+    else if(nova_media <=4.9){
+        cout << "Aluno reprovado." << endl;
+        cout << nova_media;
+    }
+}
 
 
-	return 0;
+return 0;
 }
