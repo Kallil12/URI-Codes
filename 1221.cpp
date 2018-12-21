@@ -9,16 +9,29 @@ cin >> a;
 
 for (int i = 0; i<a; i++){
     cin >> b;
-    for(int j = 2; j<=b; j++){
-        if(b%j == 0){
-            cout << "n eh primo" << endl;
-            break;
-        }
-        else
-            cout << "eh primo" << endl;
-            break;
-    }
 
+    if (b == 2){
+      cout << "Prime" << endl;
+    }
+    else{
+      if (b%2 == 0){
+
+        cout << "Not Prime" << endl;
+      }
+
+      else{
+        for(int j = 3; j<b; j++){
+            if(b%j == 0){
+                cout << "Not Prime" << endl;
+                break;
+            }
+            else{
+                cout << "Prime" << endl;
+                break;
+            }
+        }
+      }
+    }
 }
 
 return 0;
