@@ -29,11 +29,11 @@ return 0;
 
 int fib(int x){
     calls++;
+    
     if (x == 0){
         return 0;
     }
     if (x == 1){
-
         return 1;
     }
     else{
