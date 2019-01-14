@@ -25,7 +25,7 @@ cont = 0;
 media = 0;
 cout << "novo calculo (1-sim 2-nao)" << endl;
 cin >> resposta;
-while(resposta >= 3 && resposta <=0){
+while(resposta !=1 && resposta !=2){
   cout << "novo calculo (1-sim 2-nao)" << endl;
   cin >> resposta;
 }
