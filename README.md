@@ -1,7 +1,7 @@
 # URI - Codes in C++
 ## Answers to some problems from URI Online Judge
 
-### To test the code, just copy it to a folder, then navigate to it using the terminal (Linux) and type:
+### To test the code just copy it to a folder then navigate to it using the terminal (Linux) and type:
 
 ```
 $ g++ number_of_the_problem.cpp -o name_of_the_problem
